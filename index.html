@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="books.js" defer></script>
+    <script src="https://kit.fontawesome.com/cbb0719f13.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="foreground">
+            <div class="form-container">
+                <form id="form">
+                    <label for="title" class="label">Title</label><br>
+                    <input type="text" id="title" class="text-input"><br>
+                    <label for="author" class="label">Author</label><br>
+                    <input type="text" id="author" class="text-input"><br>
+                    <label for="pages" class="label">Pages</label><br>
+                    <input type="text" id="pages" class="text-input"><br>
+                    <p class="label">Reading Status</p><br>
+                    <div class="radio-form-container">
+                        <div class="radio-choice-container">
+                            <input type="radio" id="read" name="read" value="read" checked>
+                            <label for="read" class="radio">Read</label>
+                        </div>
+                        <div class="radio-choice-container">
+                            <input type="radio" id="unread" name="read" value="unread">
+                            <label for="unread" class="radio">Unread</label>
+                        </div>
+                        <div class="radio-choice-container">
+                            <input type="radio" id="reading" name="read" value="reading">
+                            <label for="reading" class="radio">Reading</label><br>
+                        </div>
+                    </div>
+                    <div class="button-container-submit">
+                        <button id="formSubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container-left">
+                <div class="container">
+        
+                </div>
+                <div class="button-container-arrow">
+                    <button id="back"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="go"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
